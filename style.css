@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: hsl(204, 43%, 93%);
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 12px;
+    background: #fff;
+    grid-template-areas: "a a""b c";
+    margin: 1rem;
+    overflow: hidden;
+}
+.comunity_content{
+    grid-area: a;
+}
+.box_left_sub{
+    grid-area: b;
+    background: hsl(179, 62%, 43%);
+}
+.box_right_sub{
+    grid-area: c;
+    background: hsla(179, 62%, 43%, 0.637);
+}
+.pd{
+    padding: 50px;
+}
+.comunity_content h1{
+    color: hsl(179, 62%, 43%);
+}
+.comunity_content h3{
+    color: hsl(71, 73%, 54%);
+    margin: 25px 0 20px 0;
+    font-size: 22px;
+}
+.comunity_content p{
+    color: hsl(218, 22%, 67%);
+    font-size: 18px;
+    line-height: 30px;
+    width: 73%;
+}
+h4{
+    color: #fff;
+    font-size: 24px;
+    margin-top: 25px;
+}
+h5{
+    color: #fff;
+    font-size: 2.8rem;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+span{
+    font-size: 1.2rem;
+    color: hsl(204, 43%, 93%);
+    margin-left: 15px;
+}
+.box_left_sub p{
+    font-size: 1.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.box_left_sub a {
+    font-weight: 700;
+    background: hsl(71, 73%, 54%);
+    padding: 18px 0;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+.box_right_sub ul li{
+    color: #fff;
+    line-height: 25px;
+    font-size: 15px;
+}
+@media only screen and (max-width:425px){
+    .wrapper{
+       grid-template-columns: 100%; 
+       grid-template-areas: "a""b""c";
+    }
+    .pd{
+        padding: 30px;
+    }
+} 
